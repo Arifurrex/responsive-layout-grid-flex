@@ -1,91 +1,114 @@
-/* 
-////// For this challenge ///////
-
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
-
-// Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
-
-   */
-
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
-
-h1 {
-  font-size: 3rem;
+html {
+  font-size: 21px;
 }
-
-.container {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.row {
-  /* display: flex => flex container */
-  display: flex;
-
-  /* can't use yet */
-  /* gap: 100px; */
-}
-
-.col {
-  /* these are now flex items */
-  width: 100%;
-}
-.col + .col {
-  margin-left: 2em;
-}
-.formola {
-  background-color: #23424a;
+a {
+  text-decoration: none;
   color: #fff;
+}
+.btn {
+  display: inline-block;
+  padding: 0.2em 2em;
+  border-radius: 100px;
+  border: none;
+  padding: 0.75em 2em;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  padding: 0.75em 0;
+  background-color: rgb(68, 50, 148);
+  color: #fff;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border: 1px solid red;
+}
+.nav__item {
+  font-size: 1rem;
+  margin-right: 1em;
+  text-transform: capitalize;
+}
+.tt {
+  margin-left: auto;
+  border: 1px solid orange;
+}
+.nav--btn {
+  padding: 0.2em 1em;
+  color: rgb(111, 43, 175);
+  background-color: #fff;
+  align-self: center;
+  text-align: center;
 }
 .hero {
-  padding: 100px 0;
-  background-color: #23424a;
+  padding: 6em 0;
+  background-color: rgb(111, 43, 175);
   color: #fff;
 }
-
+.container {
+  width: 80%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
 .hero__text {
-  width: 60%;
+  width: 58%;
+}
+.hero__image {
+  width: 38%;
+  align-self: flex-start;
+}
+img {
+  max-width: 100%;
 }
 
+.hero h1 {
+  text-transform: uppercase;
+}
 .hero p {
+  font-size: 1em;
+  margin-top: 1em;
   margin-bottom: 3em;
 }
 
-.btn {
-  display: inline-block;
-  text-decoration: none;
+.btn--modifier {
+  font-size: 1em;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #23424a;
-  font-weight: 900;
-  background-color: #38cfd9;
-  padding: 0.75em 2em;
-  border-radius: 100px;
+  background-color: rgb(68, 50, 148);
 }
-
-.btn:hover,
-.btn:focus {
-  opacity: 0.75;
+.main {
+  padding: 3em 0;
+}
+article {
+  width: 58%;
+}
+article h2 {
+  color: rgb(68, 50, 148);
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+aside {
+  width: 38%;
+  padding: 2em;
+  background-color: rgb(68, 50, 148);
+  color: rgb(231, 231, 231);
+  text-align: center;
+}
+aside h2 {
+  margin-bottom: 0.75em;
+}
+.aside__one + .aside__one {
+  margin-top: 2em;
 }
