@@ -12,6 +12,7 @@ h1 {
 }
 .row {
   display: flex;
+  flex-direction: column;
 }
 .hero {
   padding: 10em 0;
@@ -46,11 +47,14 @@ h1 {
 .section-two {
   padding: 3em 0;
 }
+.section-two h1 {
+  color: rgb(49, 153, 139);
+}
 .col {
-  text-align: center;
+  /* text-align: center; */
 }
 .col + .col {
-  margin-left: 2em;
+  margin-top: 2em;
 }
 .col p {
   margin-top: 1rem;
@@ -61,5 +65,10 @@ h1 {
 }
 .section--three h1,
 .section--three p {
-  color: rgb(216, 212, 212);
+  color: #fff;
+}
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
 }
